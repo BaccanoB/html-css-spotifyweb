@@ -15,14 +15,15 @@
         <main>
             <!-- barra laterale -->
             <aside>
-                <div>
+                <div id="aside_top">
                     <div class="hidden_xs">
                         <img id="logo" src="img/logo.svg" alt="logo">
-                        <ul id="icon_list">
+
+                        <ul class="menu-list">
                             <li id="home">
-                                <a class="cl_w"  href="#">
+                                <a href="#">
                                     <img src="img/home.svg" alt="home">
-                                    <span class="fw_b">Home</span>
+                                    <span>Home</span>
                                 </a>
                             </li>
                             <li>
@@ -38,10 +39,11 @@
                                 </a>
                             </li>
                         </ul>
-                        <h4 class="cl_w">Playlist</h4>
-                        <p class="fw_b"> <span id="plus"><i class="fas fa-plus"></i></span> Crea playlist</p>
-                        <div id="list_nome">
-                            <ul >
+
+                        <div class="nav-playlist">
+                            <h4 class="playlist_title">Playlist</h4>
+                            <p> <span id="plus"><i class="fas fa-plus"></i></span> Crea playlist</p>
+                            <ul class="menu-list">
                                 <li>
                                     <a href="#">Nome playlist</a>
                                 </li>
@@ -76,13 +78,13 @@
                 <div id="aside_bottom">
                     <div class="hidden_xs" id="download">
                         <img id="download_logo"  src="img/download.svg" alt="download">
-                        <span class="fw_b" id="install">Installa app</span>
+                        <span id="install">Installa app</span>
                     </div>
                     <div class="hidden_xs"> 
                         <div id="profile_container">
                             <img id="profile" src="img/profile.svg" alt="profile">
                         </div>
-                        <span class="fw_b cl_w">Jhon Doe</span>
+                        <span id="jhon">Jhon Doe</span>
                     </div>
                     <div class="visible_xs">
                         <img id="download_logo"  src="img/download.svg" alt="download">
@@ -96,7 +98,9 @@
 
             <!-- sezione centrale -->
             <section >
-                <div id="fixed_bar"></div>
+                <div class="cl_w" id="fixed_bar">
+                  <button>Effettua l'upgrade</button>
+                </div>
                 <div id="container"></div>  
             </section>
             <!-- /sezione centrale -->
@@ -104,7 +108,61 @@
         <!--/ main -->
         
         <!-- footer -->
-        <footer></footer>
+        <footer>
+            <!-- <div id="footer_left">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div>
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+                <a href="#">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="#">
+                    <i class="far fa-folder"></i>
+                </a>
+            </div>
+            <div id="footer_center">
+                <div>
+                    <a href="#">
+                        <i class="fas fa-random"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-step-backward"></i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-play-circle"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-step-forward"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-redo-alt"></i>
+                    </a>
+                </div>
+                <div>
+                    <span>0:25</span>
+                    <div id="line_footer_center">
+                        <div></div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div id="footer_right">
+                <a href="#">
+                    <i class="fas fa-list"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-desktop"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-volume-up"></i>
+                </a>
+                <div id="line_footer_right">
+                    <div></div>
+                </div>
+            </div> -->
+        </footer>
         <!-- /footer -->
     </body>
 </html>
