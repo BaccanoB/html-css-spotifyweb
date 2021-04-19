@@ -16,63 +16,79 @@
             <!-- barra laterale -->
             <aside>
                 <div>
-                    <img id="logo" src="img/logo.svg" alt="logo">
-                <ul id="icon_list">
-                    <li id="home">
-                        <a class="cl_w"  href="#">
-                            <img src="img/home.svg" alt="home">
-                            <span class="fw_b">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  href="#">
-                            <img src="img/search.svg" alt="search">
-                            <span class="fw_b">Cerca</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  href="#">
-                            <img src="img/libreria.svg" alt="library">
-                            <span class="fw_b">La tua Libreria</span>
-                        </a>
-                    </li>
-                </ul>
-                <h4 class="cl_w">Playlist</h4>
-                <p class="fw_b"> <span id="plus"><i class="fas fa-plus"></i></span> Crea playlist</p>
-                <ul id="list_nome">
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome playlist</a>
-                    </li>
-                </ul>
+                    <div class="hidden_xs">
+                        <img id="logo" src="img/logo.svg" alt="logo">
+                        <ul id="icon_list">
+                            <li id="home">
+                                <a class="cl_w"  href="#">
+                                    <img src="img/home.svg" alt="home">
+                                    <span class="fw_b">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="#">
+                                    <img src="img/search.svg" alt="search">
+                                    <span class="fw_b">Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="#">
+                                    <img src="img/libreria.svg" alt="library">
+                                    <span class="fw_b">La tua Libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <h4 class="cl_w">Playlist</h4>
+                        <p class="fw_b"> <span id="plus"><i class="fas fa-plus"></i></span> Crea playlist</p>
+                        <div id="list_nome">
+                            <ul >
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome playlist</a>
+                                </li>
+                            </ul>
+                        </div>                     
+                    </div>
+                    <div class="visible_xs">
+                        <img src="img/logo-small.svg" alt="logo-small">
+                        <img src="img/home.svg" alt="home">
+                        <img src="img/search.svg" alt="search">
+                        <img src="img/libreria.svg" alt="library">
+                    </div>
                 </div>
-                <div>
-                    <div id="download">
-                        <img  src="img/download.svg" alt="download">
+                <div id="aside_bottom">
+                    <div class="hidden_xs" id="download">
+                        <img id="download_logo"  src="img/download.svg" alt="download">
                         <span class="fw_b" id="install">Installa app</span>
                     </div>
-                    <div> 
+                    <div class="hidden_xs"> 
                         <div id="profile_container">
                             <img id="profile" src="img/profile.svg" alt="profile">
                         </div>
                         <span class="fw_b cl_w">Jhon Doe</span>
+                    </div>
+                    <div class="visible_xs">
+                        <img id="download_logo"  src="img/download.svg" alt="download">
+                        <div id="profile_container">
+                            <img id="profile" src="img/profile.svg" alt="profile">
+                        </div>
                     </div>
                 </div>
             </aside>
