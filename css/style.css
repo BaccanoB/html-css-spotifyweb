@@ -69,7 +69,7 @@ aside {
 
 /* aside top */
 
-.hidden_xs {
+#hidden_xs_flex {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -285,14 +285,13 @@ footer {
     width: 40%;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     align-items: center;
 }
 
 #play_bar {
-    width: 80%;
+    width: 100%;
 }
 
 #time_bar {
@@ -301,7 +300,7 @@ footer {
 
 #footer_center a {
     font-size: 18px;
-    margin: 5px 10px;
+    padding: 0 5px;
     color: white;
 }
 .fa-play-circle {
@@ -331,7 +330,6 @@ footer {
     width: 250px;
     padding-right: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
@@ -355,6 +353,20 @@ footer {
 
 /* media */ 
 
+@media screen and (max-width: 660px) {
+    #footer_center a {
+        font-size: 12px;
+    }
+    .fa-play-circle {
+        font-size: 15px;
+    }
+    
+    #footer_center span {
+        font-size: 8px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     aside {
@@ -370,11 +382,8 @@ footer {
     #fixed_bar {
         width: calc(100% - 50px);
     }
-
-    .hidden_xs {
-        display: none
-    }
-
+    #hidden_xs_flex,
+    .hidden_xs,
     .hidden {
         display: none;
     }
