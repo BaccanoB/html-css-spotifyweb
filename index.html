@@ -78,7 +78,7 @@
                 <div id="aside_bottom">
                     <div class="hidden_xs" id="download">
                         <img id="download_logo"  src="img/download.svg" alt="download">
-                        <span id="install">Installa app</span>
+                        <a href="#">Installa app</a>
                     </div>
                     <div class="hidden_xs"> 
                         <div id="profile_container">
@@ -97,11 +97,21 @@
             <!--/ barra laterale -->
 
             <!-- sezione centrale -->
-            <section >
+            <section id="album_container">
+                <!-- fixed -->
                 <div class="cl_w" id="fixed_bar">
                   <button>Effettua l'upgrade</button>
                 </div>
-                <div id="container"></div>  
+                <!-- /fixed -->
+
+                <!-- sezione album -->
+                <div id="container">
+                    <div id="nav-bar"></div>
+                    <div class="album_row"></div>
+                    <div class="album_row"></div>
+                    <div class="album_row"></div>
+                </div>  
+                <!-- /sezione album -->
             </section>
             <!-- /sezione centrale -->
         </main>
@@ -109,7 +119,7 @@
         
         <!-- footer -->
         <footer>
-            <!-- <div id="footer_left">
+            <div id="footer_left">
                 <img src="img/sinister.jpeg" alt="sinister">
                 <div>
                     <p>Sinister</p>
@@ -123,7 +133,7 @@
                 </a>
             </div>
             <div id="footer_center">
-                <div>
+                <div id="play_bar">
                     <a href="#">
                         <i class="fas fa-random"></i>
                     </a>
@@ -140,7 +150,7 @@
                         <i class="fas fa-redo-alt"></i>
                     </a>
                 </div>
-                <div>
+                <div id="time_bar">
                     <span>0:25</span>
                     <div id="line_footer_center">
                         <div></div>
@@ -161,7 +171,7 @@
                 <div id="line_footer_right">
                     <div></div>
                 </div>
-            </div> -->
+            </div>
         </footer>
         <!-- /footer -->
     </body>
