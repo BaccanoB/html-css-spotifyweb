@@ -26,7 +26,7 @@ a:hover {
 aside span ,
 #list_nome li ,
 #install{
-font-size: 11px;
+font-size: 12px;
 }
 
 /* main */
@@ -50,9 +50,10 @@ section {
 
 /* aside */
 aside {
+    position: relative;
     width: 250px;
     height: 100%;
-    padding: 20px 10px 5px 10px;
+    padding: 20px 10px 5px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,7 +62,18 @@ aside {
 
 /* aside top */
 
+#green_line {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 4px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #AAFA2F;
+}
+
 #aside_top {
+    padding-left: 10px;
     overflow-y: hidden;
     height: calc(100% - 80px);
 }
@@ -86,12 +98,6 @@ aside {
     width: 60%;
 }
 
-#home {
-    padding-left: 2px;
-    border-left: 2px solid #AAFA2F;
-    color: white;
-}
-
 .menu-list {
     list-style: none;
     padding-top: 10px;
@@ -104,7 +110,7 @@ aside {
 
 .menu-list li {
     padding: 5px 0;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .menu-list span {
@@ -118,6 +124,10 @@ aside {
     color: white;
 }
 
+.nav-playlist > a {
+    line-height: 35px;
+}
+
 #plus {
     padding: 8px 10px;
     color: black;
@@ -125,7 +135,7 @@ aside {
     background-color: #A2A2A2;
 }
 
-#plus:hover {
+.nav-playlist > a:hover #plus {
     background-color: white;
     transition: 0.2s;
 }
@@ -151,6 +161,7 @@ aside {
 /* aside bottom */
 
 #aside_bottom {
+    padding-left: 10px;
     height: 80px;
     overflow: hidden;
 }
@@ -160,6 +171,8 @@ aside {
     width: 5%;
     vertical-align: middle;
 }
+
+
 
 #download {
     border-bottom: 1px solid #707070;
@@ -223,6 +236,8 @@ button:hover {
     transition: 0.2s;
 } 
 
+/* sezione album */
+
 section {
     width: calc(100% - 250px);
     height: 100%;
@@ -251,6 +266,8 @@ section {
     margin-left: 0;
 }
 
+/* navbar */
+
 #nav-bar {
     width: 95%;
     display: flex;
@@ -265,7 +282,22 @@ section {
     font-size: 13px;
 }
 
+#nav-bar a:first-child {
+    padding-top: 3px;
+}
+
+#nav-bar a div {
+    width: 40%;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #AAFA2F;
+}
+
+/* album */
+
 .album_container {
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     align-items: flex-start;
@@ -273,6 +305,7 @@ section {
 
 .album_row {
     width: 95%;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;   
 }
@@ -280,7 +313,7 @@ section {
 .single_album {
     width: calc(100% / 6);
     text-align: center;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .img_container {
@@ -368,7 +401,7 @@ footer {
 #footer_left p {
     font-size: 10px;
 }
-#footer_left p:first-child {
+#footer_left p {
     font-size: 11px;
     color: white;
 }
@@ -380,8 +413,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 .fa-folder {
     margin-left: 5px;
@@ -389,6 +420,9 @@ footer {
 
 #brano_nome {
     font-size: 11px;
+}
+#brano_nome:hover {
+    text-decoration: underline;
 }
 
 .fa-heart {
@@ -532,12 +566,20 @@ footer .fa-play-circle:hover {
 @media screen and (max-width: 552px) {
     aside {
         width: 50px;
-        padding-top: 5px;
+        padding: 5px 10px 5px 0;
+    }
+
+    #green_line {
+        display: none;
     }
   
     .visible_xs {
         display: block;
         text-align: center;
+    }
+
+    #aside_bottom {
+        padding-top: 30px;
     }
 
     #hidden_xs_flex,
@@ -565,12 +607,76 @@ footer .fa-play-circle:hover {
 
     #footer_left,
     #footer_right {
-        width: 29%;
+        width: 35%;
+    }
+    #footer_left #icon_left_footer a {
+        font-size: 11px;
+    }
+    #footer_left #icon_left_footer {
+        margin-left: 0;
+    }
+    #footer_left a {
+        font-size: 9px;
+    }
+    #footer_left p {
+        font-size: 11px;
+    } 
+    #icon_left_footer {
+        width: 30%;
     }
     
     .footer_center {
         width: 30%;
     }
+    #footer_center a {
+        font-size: 10px;
+        padding: 0 2px;
+    }
+    #footer_center span {
+        font-size: 8px;
+    }
+    
+    footer .fa-play-circle {
+        font-size: 10px;
+    }
+    footer .fa-play-circle:hover {
+        font-size: 15px;
+    }
+
+    #line_footer_center {
+        height: 3px;
+    }
+    #line_footer_center #colored_line {
+        height: 3px;
+    } 
+
+    #time_bar span {
+        font-size: 5px;
+    }
+
+    #footer_right a {
+        margin:0;
+        padding: 2px;
+    }
+    
+    #line_footer_right {
+        margin-left: 0;
+        height: 3px;
+    }
+    #line_footer_right #colored_right_line {
+        height: 3px;
+    }
+    
+    .spot {
+        bottom: calc(100% - 4px);
+        width: 5px;
+        height: 5px;
+    }
+
+    #footer_right a {
+        font-size: 11px;
+    }
+    
 
 }
 
@@ -580,5 +686,31 @@ footer .fa-play-circle:hover {
         width: 43%;
         height: 43%;
         margin:5px 5px 5px 10px;
-    } 
+    }
+    
+    #footer_left #icon_left_footer a {
+        font-size: 10px;
+    }
+
+    #footer_left a {
+        font-size: 8px;
+    }
+    #footer_left p {
+        font-size: 9px;
+    }
+    
 }
+
+@media screen and (max-width: 363px) {
+    #footer_left #icon_left_footer a {
+        font-size: 9px;
+    }
+
+    #footer_left a {
+        font-size: 7px;
+    }
+    #footer_left p {
+        font-size: 8px;
+    }
+}
+
