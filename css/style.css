@@ -208,17 +208,17 @@ aside {
 }
 
 button {
-    border: 1px solid white;
-    font-size: 8px;
-    text-transform: uppercase;
-    color: white;
+    margin-right: 20px;
     padding: 8px 25px;
     border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 8px;
     background-color: transparent;
+    color: white;
+    border: 1px solid white;
 }
 button:hover {
-    font-size: 10px;
-    padding: 10px 30px;
+    transform: scale(1.2);
     cursor: pointer;
     transition: 0.2s;
 } 
@@ -237,7 +237,7 @@ section {
     align-items: center;  
 }
 #container h2 {
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     color: white;
 }
 #container h3 {
@@ -374,6 +374,16 @@ footer {
 }
 #footer_left div {
     display: inline-block;
+    margin-left: 5px;
+}
+#footer_left div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.fa-folder {
     margin-left: 5px;
 }
 
