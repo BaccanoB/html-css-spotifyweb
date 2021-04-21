@@ -14,11 +14,11 @@
         <!-- main -->
         <main>
             <!-- barra laterale -->
-            <aside>
+            <aside class="ms_flex">
                 <div id="green_line"></div>
                 <!-- aside top -->
                 <div id="aside_top">
-                    <div class="hidden_xs" id="hidden_xs_flex">
+                    <div class="hidden_xs ms_flex" id="hidden_xs_flex">
                         <img id="logo" src="img/logo.svg" alt="logo">
                         <ul class="menu-list">
                             <li>
@@ -40,7 +40,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="nav-playlist">
+                        <div class="nav-playlist ms_flex">
                             <h4 class="playlist_title">Playlist</h4>
                             <a href="#"> <span id="plus"><i class="fas fa-plus"></i></span> Crea playlist</a>
                             <ul class="menu-list">
@@ -103,17 +103,17 @@
             <!-- sezione centrale -->
             <section id="album_container">
                 <!-- fixed -->
-                <div id="fixed_bar">
+                <div class="ms_flex" id="fixed_bar">
                   <button>Effettua l'upgrade</button>
                 </div>
                 <!-- /fixed -->
 
                 <!-- sezione album -->
-                <div id="container">
+                <div class="ms_flex" id="container">
                     <!-- navbar -->
-                    <div id="nav-bar">
+                    <div class="ms_flex" id="nav-bar">
                         <a href="#">in evidenza
-                            <div></div>
+                            <div id="nav_green_line"></div>
                         </a>
                         <a href="#">podcast</a>
                         <a href="#">classifiche</a>
@@ -124,9 +124,9 @@
                     <!-- /navbar -->
 
                     <!-- row album -->
-                    <div class="album_row">
+                    <div class="album_row ms_flex">
                         <h2>Recently Played</h2>
-                        <div class="album_container">
+                        <div class="album_container ms_flex">
                             <div class="single_album">
                                 <div class="img_container">
                                     <div class="img_hover">
@@ -201,10 +201,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="album_row">
+                    <div class="album_row ms_flex">
                         <h2>Creato per Jhon Doe</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                        <div class="album_container">
+                        <div class="album_container ms_flex">
                             <div class="single_album">
                                 <div class="img_container">
                                     <div class="img_hover">
@@ -229,10 +229,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="album_row">
+                    <div class="album_row ms_flex">
                         <h2>Artisti più popolari</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                        <div id="last_album_container" class="album_container">
+                        <div id="last_album_container" class="album_container ms_flex">
                             <div class="single_album">
                                 <div class="img_container">
                                     <div class="img_hover">
@@ -266,15 +266,15 @@
         <!--/ main -->
         
         <!-- footer -->
-        <footer>
+        <footer class="ms_flex">
             <!-- footer left -->
-            <div id="footer_left">
+            <div class="ms_flex" id="footer_left">
                 <img src="img/sinister.jpeg" alt="sinister">
                 <div>
                     <p>Sinister</p>
                     <a id="brano_nome" href="#">Brano Nome</a>
                 </div>
-                <div id="icon_left_footer">
+                <div class="ms_flex" id="icon_left_footer">
                     <a href="#">
                         <i class="far fa-heart"></i>
                     </a>
@@ -287,7 +287,7 @@
              <!-- /footer left -->
 
              <!-- footer center -->
-            <div id="footer_center">
+            <div class="ms_flex" id="footer_center">
                 <div id="play_bar">
                     <a href="#">
                         <i class="fas fa-random"></i>
@@ -318,7 +318,7 @@
              <!-- /footer center -->
 
              <!-- footer right -->
-            <div id="footer_right">
+            <div class="ms_flex" id="footer_right">
                 <a href="#">
                     <i class="fas fa-list"></i>
                 </a>
