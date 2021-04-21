@@ -400,7 +400,7 @@ footer {
     font-size: 11px;
     color: white;
 }
-#footer_left div {
+#footer_left div:not(#icon_left_footer) {
     display: inline-block;
     margin-left: 5px;
 }
@@ -450,7 +450,7 @@ footer .fa-play-circle {
     font-size: 25px;
 }
 footer .fa-play-circle:hover {
-    font-size: 30px;
+    transform: scale(1.2);
     transition: 0.3s;
 }
 
@@ -524,6 +524,7 @@ footer .fa-play-circle:hover {
 
     .single_album {
         width: calc(100% / 4);
+        padding-right: 10px;
     }
     
 }
@@ -622,9 +623,6 @@ footer .fa-play-circle:hover {
     footer .fa-play-circle {
         font-size: 10px;
     }
-    footer .fa-play-circle:hover {
-        font-size: 15px;
-    }
     #line_footer_center,
     #line_footer_center #colored_line {
         height: 3px;
@@ -670,6 +668,10 @@ footer .fa-play-circle:hover {
     }
     #footer_left p {
         font-size: 9px;
+    }
+
+    footer .fa-play-circle:hover {
+        transform: scale(1.4);
     }
     
 }
