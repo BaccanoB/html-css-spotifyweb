@@ -91,6 +91,7 @@ aside {
 }
 
 #aside_top {
+    min-height: 300px;
     padding-left: 10px;
     overflow-y: hidden;
     height: calc(100% - 80px);
@@ -298,8 +299,7 @@ section {
 /* album */
 
 .album_row {
-    width: 95%;
-    margin-left: 25px;   
+    width: 95%;   
 }
 
 .album_container {
@@ -379,7 +379,6 @@ footer {
 }
 
 /* footer left */
-
 #footer_left{
     width: 250px;
     justify-content: space-around;
@@ -658,7 +657,18 @@ footer .fa-play-circle:hover {
         height: 43%;
         margin:5px 5px 5px 10px;
     }
-    
+
+    #icon_left_footer {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .fa-folder {
+        margin-left: 0px;
+    }
+    .fa-heart {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     #footer_left #icon_left_footer a {
         font-size: 10px;
     }
@@ -677,6 +687,15 @@ footer .fa-play-circle:hover {
 }
 
 @media screen and (max-width: 363px) {
+    #footer_left  div:not(#icon_left_footer) {
+        line-height: 8px;
+    }
+
+    #icon_left_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
     #footer_left #icon_left_footer a {
         font-size: 9px;
     }
@@ -688,4 +707,3 @@ footer .fa-play-circle:hover {
         font-size: 8px;
     }
 }
-
